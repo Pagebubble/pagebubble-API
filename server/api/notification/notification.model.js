@@ -5,7 +5,8 @@ var mongoose = require('mongoose'),
 
 var NotificationSchema = new Schema({
   name: String,
-  info: String,
+  data: Schema.Types.Mixed,
+  originUrl: String,
   active: { type: Boolean, default: true }
 });
 
